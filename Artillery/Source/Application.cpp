@@ -40,7 +40,7 @@ void Application::Init()
     m_device = createDevice( DeviceType, WindowSize, BitsPerPixel, Fullscreen, UseStencil, VSync );
 
     if( m_device == nullptr )
-        throw std::runtime_error( "can't create video device" );
+        throw std::runtime_error( "can't create video device!" );
 
     m_device->setWindowCaption( L"Artillery" );
 
